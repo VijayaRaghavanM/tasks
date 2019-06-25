@@ -1,0 +1,6 @@
+<form action="{% url 'tasks:update' task.id %}" method="post">
+{%csrf_token%}
+<textarea name="name" rows="10" cols="30">{{task.name}}</textarea>
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+</form>
